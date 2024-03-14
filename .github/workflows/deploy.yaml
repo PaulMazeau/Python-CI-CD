@@ -40,3 +40,4 @@ jobs:
             docker stop python-cicd || true
             docker rm python-cicd || true
             docker run -d --name python-cicd -p 80:80 python-cicd:latest
+            curl localhost:80
